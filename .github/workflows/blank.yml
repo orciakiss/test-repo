@@ -15,12 +15,12 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-test: 
+  test:
     runs-on: ubuntu-latest
-steps: 
-  - name: check uptime
-    run: uptime
-  - name: cpu info
-    run: nproc
-  - name: kernel info
-    run: uname -r
+    steps:
+      - name: Check Uptime
+        run: uptime
+      - name: Cpu info
+        run: nproc
+      - name: kernel info 
+        run: uname -r
